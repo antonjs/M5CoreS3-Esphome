@@ -12,6 +12,7 @@ namespace board_m5cores3 {
 class BoardM5CoreS3 : public Component {
  public:
   void setup() override;
+  float get_setup_priority() const override;
   void loop() override;
   void dump_config() override;
 };
