@@ -16,7 +16,7 @@ void BoardM5CoreS3::setup() {
     // M5.Speaker.end();
 }
 
-float BoardM5CoreS3::get_setup_priority() const { return 1100f; }
+float BoardM5CoreS3::get_setup_priority() const { return 1100; }
 
 void BoardM5CoreS3::loop() {
 
