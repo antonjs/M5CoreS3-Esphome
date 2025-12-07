@@ -9,6 +9,8 @@ static const char *TAG = "board.m5cores3";
 void BoardM5CoreS3::setup() {
     ESP_LOGI(TAG, "setup");
     M5.begin();
+    ESP_LOGI(TAG, "Enabling 5V power output on the external ports");
+    M5.Power.setExtOutput(true);
     // M5.Display.fillScreen(TFT_BLUE);
     // M5.Mic.end();
     // M5.Speaker.end();
